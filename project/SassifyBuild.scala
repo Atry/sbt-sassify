@@ -6,6 +6,7 @@ import de.heikoseeberger.sbtheader.license.Apache2_0
 import de.heikoseeberger.sbtheader.HeaderKey._
 import sbt.Keys._
 import sbt._
+import java.time.LocalDate
 
 object SassifyBuild extends Build {
 
@@ -36,8 +37,8 @@ object SassifyBuild extends Build {
 
   val copyrightSettings =
     headers := Map(
-      "scala" -> Apache2_0("2016", "Han van Venrooij"),
-      "java" -> Apache2_0("2016", "Han van Venrooij")
+      "scala" -> Apache2_0(LocalDate.now().getYear.toString, "Han van Venrooij"),
+      "java" -> Apache2_0(LocalDate.now().getYear.toString, "Han van Venrooij")
     )
 
   lazy val testScalastyle = taskKey[Unit]("testScalastyle")

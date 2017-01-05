@@ -87,3 +87,6 @@
 
 ## 1.4.8
 - Upgrade to `libsass` 3.4.2
+
+## 1.4.9
+- Update licence headers
