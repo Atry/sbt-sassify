@@ -90,3 +90,5 @@
 
 ## 1.4.9
 - Update licence headers
+- Split the SBT plugin from the core library
+- Upgrade to `libsass` 3.4.3
