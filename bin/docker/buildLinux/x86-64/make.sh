@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /sass
+cd /sass/sassify
 
 rm -r src/main/resources/linux-x86-64
 mkdir -p src/main/resources/linux-x86-64
@@ -21,5 +21,5 @@ make -C src/native -j8 || exit 1
 cp src/native/lib/libsass.so src/main/resources/linux-x86-64/libsass.so || exit 1
 
 # *** Cleanup
-cd /sass/src/native
+cd /sass/sassify/src/native
 git clean -xdf

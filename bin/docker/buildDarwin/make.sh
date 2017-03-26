@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-cd /sass
+cd /sass/sassify
 
 rm -r src/main/resources/darwin
 mkdir -p src/main/resources/darwin
@@ -23,5 +23,5 @@ BUILD=shared \
 cp src/native/lib/libsass.so src/main/resources/darwin/libsass.dylib || exit 1
 
 # *** Cleanup
-cd /sass/src/native
+cd /sass/sassify/src/native
 git clean -xdf

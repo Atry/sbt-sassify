@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /sass
+cd /sass/sassify
 
 rm -r src/main/resources/linux-x86
 mkdir -p src/main/resources/linux-x86
@@ -19,5 +19,5 @@ BUILD="shared" \
 cp src/native/lib/libsass.so src/main/resources/linux-x86/libsass.so || exit 1
 
 # *** Cleanup
-cd /sass/src/native
+cd /sass/sassify/src/native
 git clean -xdf

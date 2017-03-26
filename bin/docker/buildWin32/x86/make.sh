@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /sass
+cd /sass/sassify
 
 rm -r src/main/resources/win32-x86
 mkdir -p src/main/resources/win32-x86
